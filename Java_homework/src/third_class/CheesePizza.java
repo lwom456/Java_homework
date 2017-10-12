@@ -1,6 +1,6 @@
 package third_class;
 
-public class CheesePizza extends Pizza{
+public class CheesePizza implements Pizza{
 
 	@Override
 	public void prepare() {
