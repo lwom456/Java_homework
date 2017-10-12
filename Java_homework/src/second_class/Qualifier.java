@@ -9,7 +9,7 @@ public class Qualifier {
 	public static void main(String args[]) {
 		QualifierTest q = new QualifierTest();
 		System.out.println(q.pub);
-		System.out.println(q.pri);
+		//System.out.println(q.pri);  (This is a problem code!!)
 		System.out.println(q.prot);
 		System.out.println(q.def);
 	}
