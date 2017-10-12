@@ -1,22 +1,13 @@
 package second_class;
 
 public class Sington {
-	public static void main(String args[]) {
-		ChocolateBoiler cb = ChocolateBoiler.getInstance();
-		cb.full();
-		cb.boil();
-		cb.drain();
-	}
-}
-
-class ChocolateBoiler{
 	private boolean empty;
 	private boolean boiled;
-	private static ChocolateBoiler c;
-	private ChocolateBoiler() {}
-	public static ChocolateBoiler getInstance() {
+	private static Sington c;
+	private Sington() {}
+	public static Sington getInstance() {
 		if(c == null) {
-			c = new ChocolateBoiler();
+			c = new Sington();
 			return c;
 		}
 		return c;
@@ -69,4 +60,12 @@ class ChocolateBoiler{
 	}
 	public boolean isEmpty() {return empty;}
 	public boolean isBolied() {return boiled;}
+	
+	//≤‚ ‘”√¿˝
+	public static void main(String args[]) {
+		Sington cb = Sington.getInstance();
+		cb.full();
+		cb.boil();
+		cb.drain();
+	}
 }

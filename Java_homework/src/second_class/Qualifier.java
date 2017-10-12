@@ -5,6 +5,7 @@ package second_class;
  * 为它产生一个对象并进行观：当你尝试取用所有class成员时、会产生什么类型的编译消息。
  * */
 public class Qualifier {
+	//测试用例
 	public static void main(String args[]) {
 		QualifierTest q = new QualifierTest();
 		System.out.println(q.pub);
