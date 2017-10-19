@@ -1,0 +1,5 @@
+package fourth_class;
+//Ë«¶ÓÁÐSJF
+public class DoubleSJF {
+
+}
