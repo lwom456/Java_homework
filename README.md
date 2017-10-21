@@ -1,15 +1,15 @@
 # Java_homework
 这个项目是用来保存今年Java程序设计课程的代码资料，同时通过这个项目来学习git的使用
 
-##作业目录
+##作业目录  
 第一节课：几个小的算法  
 第二节课：学习类的使用以及几种类权限的规则  
 第三节课：学习工厂类的设计  
 第四节课：设计FCFS(先来先服务),SJF（短作业优先）算法，  
 		ps:抢占式SJF有空再补全
 
-##下面是今天学习Markdown的笔记
-#####17.10.21
+##下面是今天学习Markdown的笔记  
+#####17.10.21  
 **加粗**
 *斜体*  
 
@@ -36,18 +36,18 @@
 >读书是为了能找到好工作  
 >赚钱是为了养女朋友！！！
 
-##代码引用
+##代码引用  
 `public class Hello{`  
 	`public static void main(String[] args){`  
 		`System.out.println("Hello World!");`  
 	`}`  
 `}`  
-ps:还是没搞懂Md怎么换行，怎么缩进
+ps:怎么缩进
 
 ##表格
-| Tables | are | Cool |  
-| ------ | ---:| ----:|  
-| is     | asd | asda |
+| Tables | are   | Cool |  
+| ------ | -----:| ----:|  
+| is     | asd   | asda |  
 
 
 | Tables        | Are           | Cool  |  
@@ -55,4 +55,4 @@ ps:还是没搞懂Md怎么换行，怎么缩进
 | col 3 is      | right-aligned | $1600 |  
 | col 2 is      | centered      |   $12 |  
 | zebra stripes | are neat      |    $1 |  
-ps:无法生成表格啊...
+ps:为什么我自己写的无法生成表格...
