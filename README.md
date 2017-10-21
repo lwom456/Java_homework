@@ -55,4 +55,7 @@ ps:怎么缩进
 | col 3 is      | right-aligned | $1600 |  
 | col 2 is      | centered      |   $12 |  
 | zebra stripes | are neat      |    $1 |  
-ps:为什么我自己写的无法生成表格...
+ps:为什么我自己写的无法生成表格...  
+
+---
+ps:而且上面那句为什么会跑到表格里区
