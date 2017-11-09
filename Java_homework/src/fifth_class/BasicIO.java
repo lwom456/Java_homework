@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class BasicIO {
 
@@ -22,10 +23,11 @@ public class BasicIO {
 			finS.close();
 			foutS.close();
 			inFile = new File("dest.txt");
-			finS = new FileInputStream(inFile);
-			while ((c = finS.read())!=-1) {
-				System.out.println(Integer.toString(finS.read()));
+			Scanner sc = new Scanner(inFile);
+			while (sc.hasNext()) {
+				System.out.println(sc.nextLine());
 			}
+			sc.close();
  		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
