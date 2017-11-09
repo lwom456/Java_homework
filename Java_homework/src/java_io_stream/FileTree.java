@@ -1,4 +1,4 @@
-package fifth_class;
+package java_io_stream;
 
 import java.io.File;
 import java.util.Date;
