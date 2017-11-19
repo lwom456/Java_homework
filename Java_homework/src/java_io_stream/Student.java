@@ -1,6 +1,9 @@
 package java_io_stream;
 
-public class Student implements Comparable<Student>{
+import java.io.Serializable;
+
+public class Student implements Comparable<Student>,Serializable{
+	private static final long serialVersionUID = 1235L;
 	long id;
 	String name;
 	String sex;

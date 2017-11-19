@@ -24,12 +24,12 @@ public class FileTree {
 				System.out.println(fileIn.getName()+"     "+date);
 			}
 		}
+		System.out.println("\n\n\nFile");
 		for(int i =0;i<list.length;i++) {
 			fileIn = new File(src+list[i]);
 			if (!fileIn.isDirectory()) {
 				Date date = new Date(fileIn.lastModified());
-				FileWriter foutS=new FileWriter("FileTreeOut.txt");	
-				
+				//FileWriter foutS=new FileWriter("FileTreeOut.txt");	
 				System.out.println(fileIn.getName()+"     "+date+"      "+fileIn.length());
 			}
 		}

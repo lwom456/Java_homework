@@ -1,13 +1,18 @@
 package java_io_stream;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class ObjectSerialization {
+public class ObjectSerialization implements Serializable{
+	private static final long serialVersionUID = 1234L;
 	private LinkedList<Student> stus;
 	
 	public ObjectSerialization() {
@@ -34,8 +39,7 @@ public class ObjectSerialization {
 	
 	public static void main(String[] args){
 		try {
-			File fin = new File("list.txt");
-			FileInputStream fins = new FileInputStream(fin);
+			FileInputStream fins = new FileInputStream("list.txt");
 			Scanner sc;
 			sc = new Scanner(fins);
 			
@@ -47,16 +51,25 @@ public class ObjectSerialization {
 			}
 			sc.close();
 			os.sort();
-			System.out.println("排序后输出：");
-			os.print();
 			
 			//save Object
-			File fout = new File("student.bin");
-			//ObjectOutputStream 
+			FileOutputStream fouts = new FileOutputStream("student.bin");
+			ObjectOutputStream out = new ObjectOutputStream(fouts);
+			out.writeObject(os);
+			out.close();
 			//read OBject
-			fin = new File("student.bin");
-			
+			fins = new FileInputStream("student.bin");
+			ObjectInputStream in = new ObjectInputStream(fins);
+			ObjectSerialization oin = (ObjectSerialization)in.readObject();
+			in.close();
+			oin.print();
 		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
