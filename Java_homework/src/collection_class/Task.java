@@ -1,4 +1,4 @@
-package fourth_class;
+package collection_class;
 
 //ÈÎÎñÀàtask
 class Task {

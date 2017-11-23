@@ -9,8 +9,6 @@ ObjectSerialization.java/Student.java  对象序列化练习
 
 1.从src.txt读取文件到dest.txt  
 然后从desc.txt读出信息并输出  
-
-
 ![1](1.png)
 
 2.比较无buffer和有buffer复制文件所化的时间  

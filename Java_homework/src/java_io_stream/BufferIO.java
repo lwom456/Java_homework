@@ -16,7 +16,7 @@ public class BufferIO {
 			File fout = new File("E:\\testout.exe");
 			FileInputStream fins = new FileInputStream(fin);
 			FileOutputStream fouts = new FileOutputStream(fout);
-			byte[] c=new byte[8192];
+			byte[] c=new byte[10];
 			long startTime=System.currentTimeMillis();
 			int i;
 			while ((i=fins.read(c))!=-1) {

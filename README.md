@@ -5,8 +5,8 @@
 第一节课：几个小的算法  
 第二节课：学习类的使用以及几种类权限的规则  
 第三节课：学习工厂类的设计  
-第四节课：设计FCFS(先来先服务),SJF（短作业优先）算法  
-实验五：JAVA的IO操作  
+实验四(collection_class)：设计FCFS(先来先服务),SJF（短作业优先）算法  
+实验五(java_io_stream)：JAVA的IO操作  
 
 
 ##下面是今天学习Markdown的笔记  
