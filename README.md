@@ -9,10 +9,10 @@
 实验四(collection_class)：设计FCFS(先来先服务),SJF（短作业优先）算法  
 实验五(java_io_stream)：JAVA的IO操作  
 
-##下面是今天学习Markdown的笔记
+## 下面是今天学习Markdown的笔记
 
-#####17.10.21  
-ps:二级标题怎么到github就显示不了了?  
+##### 17.10.21  
+
 **加粗**
 *斜体*  
 
@@ -33,21 +33,26 @@ ps:二级标题怎么到github就显示不了了?
 [数字尾巴](http://www.dgtle.com)
 ![](http://s.dgtle.com/forum/201710/17/233647fwb75zqmbe5q6oke.jpg-1200px?imageView2/2/w/960)
 
-##引用  
+## 引用
+
 >在大学一定要谈一场恋爱  
 >来大学一定要拿一次奖学金  
 >读书是为了能找到好工作  
 >赚钱是为了养女朋友！！！
 
-##代码引用  
+## 代码引用
+
 `public class Hello{`  
+
 	`public static void main(String[] args){`  
 		`System.out.println("Hello World!");`  
 	`}`  
 `}`  
+
 ps:怎么缩进
 
-##表格  
+## 表格
+
 | Tables |  are | Cool |
 | ------ | ---: | ---: |
 | is     |  asd | asda |
