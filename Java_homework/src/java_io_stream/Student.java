@@ -13,6 +13,7 @@ public class Student implements Comparable<Student>,Serializable{
 		this.sex=sex;
 	}
 	@Override
+	//for sort student object
 	public int compareTo(Student stu) {
 		int result = id > stu.id ? 1 : (id == stu.id ? 0 : -1);
 		return result;

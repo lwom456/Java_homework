@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class ObjectSerialization implements Serializable{
 	private static final long serialVersionUID = 1234L;
-	private LinkedList<Student> stus;
+	private LinkedList<Student> stus;//save student object
 	
 	public ObjectSerialization() {
 		stus = new LinkedList<Student>();
@@ -22,17 +22,15 @@ public class ObjectSerialization implements Serializable{
 	public void add(long id,String name,String sex) {
 		stus.add(new Student(id,name,sex));
 	}
-	
+	//sort studnt object
 	public void sort() {
 		Collections.sort(stus);
 	}
-	
 	public void print() {
 		for(Student stu:stus) {
 			System.out.println(stu);
 		}
 	}
-	
 	public LinkedList<Student> getLink(){
 		return stus;
 	}
@@ -46,7 +44,7 @@ public class ObjectSerialization implements Serializable{
 			//instantiation a ObjectSerialization Object
 			ObjectSerialization os = new ObjectSerialization();
 			while(sc.hasNext()) {
-				//input data
+				//input student data
 				os.add(sc.nextLong(),sc.next(),sc.next());
 			}
 			sc.close();
