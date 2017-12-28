@@ -83,7 +83,8 @@ public class MyTcpClient extends JFrame {
 	private void getServerMessage() {
 		try {
 			while(true) {			//如果套接字是连接状态
-				doc.insertString(doc.getLength(),"服务器:"+reader.readLine()+"\n", setRed);
+				String recv = reader.readLine();
+				doc.insertString(doc.getLength(),"服务器:"+recv+"\n", setRed);
 			}
 		} catch (IOException | BadLocationException e) {
 			// TODO Auto-generated catch block
