@@ -8,6 +8,8 @@
 第三节课：学习工厂类的设计  
 实验四(collection_class)：设计FCFS(先来先服务),SJF（短作业优先）算法  
 实验五(java_io_stream)：JAVA的IO操作  
+实验六(thread):多线程  
+实验七(socket):网络通信   
 
 ## 下面是今天学习Markdown的笔记
 
